@@ -60,30 +60,61 @@
 
     <section id="menu" class="section">
         <h2>Menu</h2>
+        <p class="hint">Tap an item to see its ingredients and allergens.</p>
         <div class="menu-grid">
             <div class="menu-col">
                 <h3>Coffee</h3>
                 <ul>
-                    <li><span>Espresso</span><span class="price">9 zł</span></li>
-                    <li><span>Flat white</span><span class="price">16 zł</span></li>
-                    <li><span>Cappuccino</span><span class="price">15 zł</span></li>
-                    <li><span>Filter coffee</span><span class="price">18 zł</span></li>
+                    <li><details>
+                        <summary><span>Espresso</span><span class="price">9 zł</span></summary>
+                        <p class="ingredients"><strong>Ingredients:</strong> arabica coffee from a local roaster, water.<span class="allergens">Allergens: none</span></p>
+                    </details></li>
+                    <li><details>
+                        <summary><span>Flat white</span><span class="price">16 zł</span></summary>
+                        <p class="ingredients"><strong>Ingredients:</strong> double espresso, milk 3.2% (or plant-based drink).<span class="allergens">Allergens: milk</span></p>
+                    </details></li>
+                    <li><details>
+                        <summary><span>Cappuccino</span><span class="price">15 zł</span></summary>
+                        <p class="ingredients"><strong>Ingredients:</strong> espresso, milk, milk foam.<span class="allergens">Allergens: milk</span></p>
+                    </details></li>
+                    <li><details>
+                        <summary><span>Filter coffee</span><span class="price">18 zł</span></summary>
+                        <p class="ingredients"><strong>Ingredients:</strong> single origin coffee, water.<span class="allergens">Allergens: none</span></p>
+                    </details></li>
                 </ul>
             </div>
             <div class="menu-col">
                 <h3>Something sweet</h3>
                 <ul>
-                    <li><span>Basque cheesecake</span><span class="price">19 zł</span></li>
-                    <li><span>Apple pie</span><span class="price">16 zł</span></li>
-                    <li><span>Butter croissant</span><span class="price">12 zł</span></li>
+                    <li><details>
+                        <summary><span>Basque cheesecake</span><span class="price">19 zł</span></summary>
+                        <p class="ingredients"><strong>Ingredients:</strong> cream cheese, cream, eggs, sugar, wheat flour.<span class="allergens">Allergens: milk, eggs, gluten</span></p>
+                    </details></li>
+                    <li><details>
+                        <summary><span>Apple pie</span><span class="price">16 zł</span></summary>
+                        <p class="ingredients"><strong>Ingredients:</strong> apples, wheat flour, butter, sugar, cinnamon.<span class="allergens">Allergens: gluten, milk</span></p>
+                    </details></li>
+                    <li><details>
+                        <summary><span>Butter croissant</span><span class="price">12 zł</span></summary>
+                        <p class="ingredients"><strong>Ingredients:</strong> wheat flour, butter, milk, yeast, sugar, salt.<span class="allergens">Allergens: gluten, milk</span></p>
+                    </details></li>
                 </ul>
             </div>
             <div class="menu-col">
                 <h3>Other drinks</h3>
                 <ul>
-                    <li><span>Matcha latte</span><span class="price">19 zł</span></li>
-                    <li><span>Loose-leaf tea</span><span class="price">14 zł</span></li>
-                    <li><span>Homemade lemonade</span><span class="price">15 zł</span></li>
+                    <li><details>
+                        <summary><span>Matcha latte</span><span class="price">19 zł</span></summary>
+                        <p class="ingredients"><strong>Ingredients:</strong> matcha, milk (or plant-based drink), vanilla syrup.<span class="allergens">Allergens: milk</span></p>
+                    </details></li>
+                    <li><details>
+                        <summary><span>Loose-leaf tea</span><span class="price">14 zł</span></summary>
+                        <p class="ingredients"><strong>Ingredients:</strong> loose-leaf tea, water.<span class="allergens">Allergens: none</span></p>
+                    </details></li>
+                    <li><details>
+                        <summary><span>Homemade lemonade</span><span class="price">15 zł</span></summary>
+                        <p class="ingredients"><strong>Ingredients:</strong> lemon, sparkling water, sugar, mint.<span class="allergens">Allergens: none</span></p>
+                    </details></li>
                 </ul>
             </div>
         </div>

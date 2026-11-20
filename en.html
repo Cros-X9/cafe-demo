@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mała Czarna – a coffee shop in Wrocław. Good coffee, homemade cakes and a quiet corner in the city centre.">
+    <title>Mała Czarna – Coffee Shop in Wrocław</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☕</text></svg>">
+    <link rel="alternate" hreflang="pl" href="index.html">
+    <link rel="alternate" hreflang="en" href="en.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mała Czarna – Coffee Shop in Wrocław">
+    <meta property="og:description" content="Good coffee, homemade cakes and a quiet corner in the centre of Wrocław.">
+    <meta property="og:locale" content="en_US">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CafeOrCoffeeShop",
+        "name": "Mała Czarna",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "ul. Przykładowa 1",
+            "addressLocality": "Wrocław",
+            "addressCountry": "PL"
+        },
+        "telephone": "+48000000000",
+        "openingHours": ["Mo-Fr 08:00-19:00", "Sa-Su 09:00-18:00"]
+    }
+    </script>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#" class="brand"><span class="brand-cup">☕</span> Mała Czarna</a>
+            <div class="links">
+                <a href="#menu">Menu</a>
+                <a href="#about">About</a>
+                <a href="#visit">Visit us</a>
+                <a href="index.html" hreflang="pl" lang="pl" class="lang">PL</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Mała Czarna</h1>
+            <p class="lead">Coffee from a local roaster, cakes baked every morning and a quiet corner in the centre of Wrocław.</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="button">See the menu</a>
+                <a href="#visit" class="button button-outline">Find us</a>
+            </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">☕</div>
+    </section>
+
+    <section id="menu" class="section">
+        <h2>Menu</h2>
+        <div class="menu-grid">
+            <div class="menu-col">
+                <h3>Coffee</h3>
+                <ul>
+                    <li><span>Espresso</span><span class="price">9 zł</span></li>
+                    <li><span>Flat white</span><span class="price">16 zł</span></li>
+                    <li><span>Cappuccino</span><span class="price">15 zł</span></li>
+                    <li><span>Filter coffee</span><span class="price">18 zł</span></li>
+                </ul>
+            </div>
+            <div class="menu-col">
+                <h3>Something sweet</h3>
+                <ul>
+                    <li><span>Basque cheesecake</span><span class="price">19 zł</span></li>
+                    <li><span>Apple pie</span><span class="price">16 zł</span></li>
+                    <li><span>Butter croissant</span><span class="price">12 zł</span></li>
+                </ul>
+            </div>
+            <div class="menu-col">
+                <h3>Other drinks</h3>
+                <ul>
+                    <li><span>Matcha latte</span><span class="price">19 zł</span></li>
+                    <li><span>Loose-leaf tea</span><span class="price">14 zł</span></li>
+                    <li><span>Homemade lemonade</span><span class="price">15 zł</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section alt">
+        <h2>About us</h2>
+        <p class="text">
+            Mała Czarna is a small coffee shop where the coffee matters more than the decor.
+            We buy our beans from a local roaster, bake our cakes in the morning,
+            and there is always someone at the bar with time for a chat.
+        </p>
+        <div class="perks">
+            <div class="perk"><strong>Open daily from 8:00</strong><span>Your morning coffee on the way to work.</span></div>
+            <div class="perk"><strong>Plant-based milk</strong><span>Oat and soy at no extra charge.</span></div>
+            <div class="perk"><strong>Wi-Fi and power sockets</strong><span>At most of the tables.</span></div>
+        </div>
+    </section>
+
+    <section id="visit" class="section visit">
+        <h2>Visit us</h2>
+        <p>ul. Przykładowa 1, Wrocław</p>
+        <p>Mon–Fri: 8:00–19:00 &nbsp;·&nbsp; Sat–Sun: 9:00–18:00</p>
+        <p><a href="tel:+48000000000" class="phone">+48 000 000 000</a></p>
+        <div class="visit-buttons">
+            <a href="tel:+48000000000" class="button">Call us</a>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Rynek+Wroclaw" class="button button-outline" target="_blank" rel="noopener">Get directions</a>
+        </div>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps?q=Rynek+Wroclaw&output=embed"
+                width="100%" height="300" style="border:0;"
+                allowfullscreen="" loading="lazy"
+                title="Map to Mała Czarna">
+            </iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Mała Czarna. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

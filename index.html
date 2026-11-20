@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mała Czarna – kawiarnia we Wrocławiu. Dobra kawa, domowe ciasta i spokojny kąt w centrum.">
+    <title>Mała Czarna – kawiarnia we Wrocławiu</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☕</text></svg>">
+    <link rel="alternate" hreflang="pl" href="index.html">
+    <link rel="alternate" hreflang="en" href="en.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mała Czarna – kawiarnia we Wrocławiu">
+    <meta property="og:description" content="Dobra kawa, domowe ciasta i spokojny kąt w centrum Wrocławia.">
+    <meta property="og:locale" content="pl_PL">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CafeOrCoffeeShop",
+        "name": "Mała Czarna",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "ul. Przykładowa 1",
+            "addressLocality": "Wrocław",
+            "addressCountry": "PL"
+        },
+        "telephone": "+48000000000",
+        "openingHours": ["Mo-Fr 08:00-19:00", "Sa-Su 09:00-18:00"]
+    }
+    </script>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#" class="brand"><span class="brand-cup">☕</span> Mała Czarna</a>
+            <div class="links">
+                <a href="#menu">Menu</a>
+                <a href="#about">O nas</a>
+                <a href="#visit">Odwiedź nas</a>
+                <a href="en.html" hreflang="en" lang="en" class="lang">EN</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Mała Czarna</h1>
+            <p class="lead">Kawa z lokalnej palarni, ciasta pieczone rano i spokojny kąt w centrum Wrocławia.</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="button">Zobacz menu</a>
+                <a href="#visit" class="button button-outline">Jak dojść</a>
+            </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">☕</div>
+    </section>
+
+    <section id="menu" class="section">
+        <h2>Menu</h2>
+        <div class="menu-grid">
+            <div class="menu-col">
+                <h3>Kawa</h3>
+                <ul>
+                    <li><span>Espresso</span><span class="price">9 zł</span></li>
+                    <li><span>Flat white</span><span class="price">16 zł</span></li>
+                    <li><span>Cappuccino</span><span class="price">15 zł</span></li>
+                    <li><span>Kawa przelewowa</span><span class="price">18 zł</span></li>
+                </ul>
+            </div>
+            <div class="menu-col">
+                <h3>Na słodko</h3>
+                <ul>
+                    <li><span>Sernik baskijski</span><span class="price">19 zł</span></li>
+                    <li><span>Szarlotka</span><span class="price">16 zł</span></li>
+                    <li><span>Croissant z masłem</span><span class="price">12 zł</span></li>
+                </ul>
+            </div>
+            <div class="menu-col">
+                <h3>Inne napoje</h3>
+                <ul>
+                    <li><span>Matcha latte</span><span class="price">19 zł</span></li>
+                    <li><span>Herbata liściasta</span><span class="price">14 zł</span></li>
+                    <li><span>Domowa lemoniada</span><span class="price">15 zł</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section alt">
+        <h2>O nas</h2>
+        <p class="text">
+            Mała Czarna to niewielka kawiarnia, w której kawa jest ważniejsza niż wystrój.
+            Ziarna kupujemy od lokalnej palarni, ciasta pieczemy rano,
+            a przy barze zawsze ktoś ma czas na rozmowę.
+        </p>
+        <div class="perks">
+            <div class="perk"><strong>Codziennie od 8:00</strong><span>Poranna kawa w drodze do pracy.</span></div>
+            <div class="perk"><strong>Roślinne mleko</strong><span>Owsiane i sojowe bez dopłaty.</span></div>
+            <div class="perk"><strong>Wi-Fi i gniazdka</strong><span>Przy większości stolików.</span></div>
+        </div>
+    </section>
+
+    <section id="visit" class="section visit">
+        <h2>Odwiedź nas</h2>
+        <p>ul. Przykładowa 1, Wrocław</p>
+        <p>Pn–Pt: 8:00–19:00 &nbsp;·&nbsp; Sb–Nd: 9:00–18:00</p>
+        <p><a href="tel:+48000000000" class="phone">+48 000 000 000</a></p>
+        <div class="visit-buttons">
+            <a href="tel:+48000000000" class="button">Zadzwoń</a>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Rynek+Wroclaw" class="button button-outline" target="_blank" rel="noopener">Wyznacz trasę</a>
+        </div>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps?q=Rynek+Wroclaw&output=embed"
+                width="100%" height="300" style="border:0;"
+                allowfullscreen="" loading="lazy"
+                title="Mapa dojazdu do Mała Czarna">
+            </iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Mała Czarna. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+</body>
+</html>

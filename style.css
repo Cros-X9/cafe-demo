@@ -345,3 +345,79 @@ footer {
         transition: none !important;
     }
 }
+
+
+
+
+.hero h1,
+.hero .lead,
+.hero-buttons {
+    animation: riseIn 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+.hero h1 { animation-delay: 0.1s; }
+.hero .lead { animation-delay: 0.3s; }
+.hero-buttons { animation-delay: 0.5s; }
+
+
+.hero-art {
+    animation:
+        popIn 0.9s cubic-bezier(0.2, 0.8, 0.2, 1.1) 0.2s both,
+        bob 6s ease-in-out 1.2s infinite;
+}
+
+
+.brand:hover .brand-cup {
+    display: inline-block;
+    animation: wiggle 0.6s ease;
+}
+.menu-col li {
+    transition: padding-left 0.2s ease, color 0.2s ease;
+}
+.menu-col li:hover {
+    padding-left: 10px;
+    color: var(--accent);
+}
+.perk {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.perk:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(31, 58, 50, 0.12);
+}
+
+
+@supports (animation-timeline: view()) {
+    .section h2,
+    .menu-col,
+    .text,
+    .perk,
+    .visit .map {
+        animation: riseIn linear both;
+        animation-timeline: view();
+        animation-range: entry 0% entry 35%;
+    }
+}
+
+@keyframes riseIn {
+    from { opacity: 0; transform: translateY(22px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes popIn {
+    from { opacity: 0; transform: scale(0.85) rotate(-6deg); }
+    to   { opacity: 1; transform: scale(1) rotate(0); }
+}
+@keyframes bob {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-10px); }
+}
+@keyframes wiggle {
+    0%, 100% { transform: rotate(0); }
+    30%      { transform: rotate(-14deg); }
+    60%      { transform: rotate(10deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation: none !important;
+    }
+}

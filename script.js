@@ -1,12 +1,12 @@
 (function () {
     'use strict';
 
-   
+    /* ===== НАСТРОЙКИ (меняй под каждого клиента) ===== */
     var CONFIG = {
-        whatsapp: '48000000000',     
+        whatsapp: '48000000000',     // номер с кодом страны, без + и пробелов
         email: 'kontakt@example.com',
         timeZone: 'Europe/Warsaw',
-        
+        // часы работы: [открытие, закрытие]; 0 = воскресенье, 1 = понедельник ...
         hours: {
             0: [9, 18], 1: [8, 19], 2: [8, 19], 3: [8, 19],
             4: [8, 19], 5: [8, 19], 6: [9, 18]
@@ -34,7 +34,7 @@
 
     function pad(n) { return (n < 10 ? '0' : '') + n; }
 
-    
+    /* ===== Плашка «Открыто сейчас» ===== */
     function localNow() {
         var parts = new Intl.DateTimeFormat('en-US', {
             timeZone: CONFIG.timeZone,
@@ -83,13 +83,13 @@
     updateStatus();
     setInterval(updateStatus, 60000);
 
-    
+    /* ===== Плавающая кнопка WhatsApp ===== */
     var wa = document.querySelector('.wa-float');
     if (wa) {
         wa.href = 'https://wa.me/' + CONFIG.whatsapp + '?text=' + encodeURIComponent(T.greet);
     }
 
-    
+    /* ===== Форма брони ===== */
     var form = document.getElementById('book-form');
     if (!form) return;
     var note = document.getElementById('book-note');

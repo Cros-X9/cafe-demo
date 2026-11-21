@@ -51,6 +51,7 @@
         <div class="hero-text">
             <h1>Mała Czarna</h1>
             <p class="lead">Kawa z lokalnej palarni, ciasta pieczone rano i spokojny kąt w centrum Wrocławia.</p>
+            <p class="status" id="status" aria-live="polite"></p>
             <div class="hero-buttons">
                 <a href="#menu" class="button">Zobacz menu</a>
                 <a href="#visit" class="button button-outline">Jak dojść</a>
@@ -135,6 +136,22 @@
         </div>
     </section>
 
+    <section id="book" class="section">
+        <h2>Zarezerwuj stolik</h2>
+        <p class="text">Wybierz termin, a wiadomość do nas przygotuje się sama. Wystarczy ją wysłać.</p>
+        <form id="book-form" class="book-form">
+            <label>Imię <input type="text" name="guest" required autocomplete="given-name"></label>
+            <label>Data <input type="date" name="date" required></label>
+            <label>Godzina <input type="time" name="time" required></label>
+            <label>Liczba osób <input type="number" name="guests" min="1" max="12" value="2" required></label>
+            <p class="book-note" id="book-note" role="alert"></p>
+            <div class="book-actions">
+                <button type="submit" data-channel="whatsapp" class="button">Wyślij przez WhatsApp</button>
+                <button type="submit" data-channel="email" class="button button-outline">Wyślij e-mailem</button>
+            </div>
+        </form>
+    </section>
+
     <section id="visit" class="section visit">
         <h2>Odwiedź nas</h2>
         <p>ul. Przykładowa 1, Wrocław</p>
@@ -157,6 +174,11 @@
     <footer>
         <p>© 2026 Mała Czarna. Wszelkie prawa zastrzeżone.</p>
     </footer>
+
+    <a class="wa-float" href="https://wa.me/48000000000" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <span aria-hidden="true">💬</span><b>WhatsApp</b>
+    </a>
+    <script src="script.js" defer></script>
 
 </body>
 </html>

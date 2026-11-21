@@ -40,6 +40,7 @@
             <div class="links">
                 <a href="#menu">Menu</a>
                 <a href="#about">About</a>
+                <a href="#book">Booking</a>
                 <a href="#visit">Visit us</a>
                 <a href="index.html" hreflang="pl" lang="pl" class="lang">PL</a>
             </div>
@@ -50,6 +51,7 @@
         <div class="hero-text">
             <h1>Mała Czarna</h1>
             <p class="lead">Coffee from a local roaster, cakes baked every morning and a quiet corner in the centre of Wrocław.</p>
+            <p class="status" id="status" aria-live="polite"></p>
             <div class="hero-buttons">
                 <a href="#menu" class="button">See the menu</a>
                 <a href="#visit" class="button button-outline">Find us</a>
@@ -134,6 +136,22 @@
         </div>
     </section>
 
+    <section id="book" class="section">
+        <h2>Book a table</h2>
+        <p class="text">Pick a date and the message to us writes itself. You only need to send it.</p>
+        <form id="book-form" class="book-form">
+            <label>Name <input type="text" name="guest" required autocomplete="given-name"></label>
+            <label>Date <input type="date" name="date" required></label>
+            <label>Time <input type="time" name="time" required></label>
+            <label>Guests <input type="number" name="guests" min="1" max="12" value="2" required></label>
+            <p class="book-note" id="book-note" role="alert"></p>
+            <div class="book-actions">
+                <button type="submit" data-channel="whatsapp" class="button">Send via WhatsApp</button>
+                <button type="submit" data-channel="email" class="button button-outline">Send by e-mail</button>
+            </div>
+        </form>
+    </section>
+
     <section id="visit" class="section visit">
         <h2>Visit us</h2>
         <p>ul. Przykładowa 1, Wrocław</p>
@@ -156,6 +174,11 @@
     <footer>
         <p>© 2026 Mała Czarna. All rights reserved.</p>
     </footer>
+
+    <a class="wa-float" href="https://wa.me/48000000000" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <span aria-hidden="true">💬</span><b>WhatsApp</b>
+    </a>
+    <script src="script.js" defer></script>
 
 </body>
 </html>
